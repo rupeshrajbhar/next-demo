@@ -26,7 +26,7 @@ export const getStaticProps = async () => {
 };
 
 const Media = ({ data }) => {
-
+console.log(data);
   
 
     // const [User, setUser] = useState([]);
