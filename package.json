@@ -1,0 +1,32 @@
+{
+  "name": "dr-mukund-rajan",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
+    "gsap": "^3.11.4",
+    "lightgallery": "^2.6.1",
+    "moment": "^2.29.4",
+    "next": "12.3.1",
+    "next-transpile-modules": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.36.1",
+    "react-share": "^4.4.1",
+    "react-slick": "^0.29.0",
+    "react-twitter-embed": "^4.0.4",
+    "sass": "^1.54.9",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1"
+  }
+}

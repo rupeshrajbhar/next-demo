@@ -1,0 +1,112 @@
+@import "../helpers/helpers.scss";
+
+.book_inside_page{
+   .books_banner{
+    display: flex;
+    margin-left: var(--container_left_space);
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
+    z-index: 1;
+    position: relative;
+    margin-top: -97px;
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-top: -97px;
+    }
+
+    .book_img{
+        width: 20%;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        img{
+            transform: translate(50%,50%);
+            @media screen and (max-width: 767px) {
+               transform: none;
+               margin: 0 auto -65px auto;
+               z-index: 1;
+               position: relative;
+           }
+        }
+    }
+    .book_info{
+        width: 80%;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        .description {
+            margin: 0 0 0 auto;
+            padding: 60px 80px 70px 130px;
+            border-bottom-left-radius: 20px;
+            @media screen and (max-width: 767px) {
+                padding: 60px 15px 70px 15px;
+            }
+    
+    
+            .heading_title {
+                line-height: 60px;
+    
+                .heading_span {
+                    display: inherit;
+                }
+            }
+    
+            p {
+                width: 95%;
+                padding-top: 25px;
+            }
+            .short_desc{
+                padding: 25px 0 10px;
+            }
+
+            .buy_link{
+                margin-top: 40px;
+                p{
+                    width: auto;
+                    padding: 8px 25px;
+                }
+            }
+            .all{
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                .a{ background-color: red;
+                    &:first-child{
+                        grid-row-start: 3;
+                        grid-row-end: -6;
+                        grid-column-start: 2;
+                        grid-column-end: 4;
+                    }
+                }
+            }
+        }
+    }
+   }
+
+   .reviews_section{
+    .reviews{
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #A78B7D;
+        &:last-child{
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .reviews_name{
+            opacity: .8;
+            color: #34352F;
+            padding-top: 20px;
+        }
+        .reviews_profile{
+            opacity: .8;
+            color: #34352F; 
+        }
+    }
+   }
+}

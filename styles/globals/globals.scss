@@ -1,0 +1,119 @@
+@import "../helpers/helpers.scss";
+@import "variables.scss";
+@import "fontface.scss";
+@import "text_bg_color.scss";
+@import "typography.scss";
+@import "bootstrap3.scss";
+
+body {
+  margin: 0;
+  @extend .text_reg;
+  font-family: var(--font_secondary);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color_brown);
+}
+
+p {
+  @extend .text_md;
+  line-height: 34px;
+  @media screen and (max-width: 767px) {
+    line-height: 32px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  @extend .container-fluid;
+  margin: 0 auto;
+  width: var(--container_width);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text_center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+picture {
+  display: block !important;
+}
+
+.section_spacing {
+  padding: 10vmin 0;
+}
+
+//classes for fonts
+.font_primary {
+  font-family: var(--font_primary);
+  font-weight: normal;
+}
+
+.font_secondary {
+  font-family: var(--font_secondary);
+}
+
+.sharePooup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  display: none;
+  place-items: center;
+
+  .section {
+    // width: 50vw;
+    // height: 80vh;
+    background-color: white;
+    padding: 20px 10px;
+    .cross {
+      width: 20px;
+      margin-left: auto;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .social_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      svg {
+        border-radius: 100%;
+      }
+    }
+
+    @include sm-down {
+      width: 80vw;
+    }
+  }
+
+  &.active {
+    display: grid;
+  }
+}

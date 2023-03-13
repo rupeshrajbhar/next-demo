@@ -1,0 +1,99 @@
+@import "../helpers/helpers.scss";
+
+.contact_page {
+  .contact_section {
+    display: grid;
+    padding-top: 25px;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 992px) {
+      padding-top: 0;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact_info {
+      margin-top: -19px;
+      @media screen and (max-width: 992px) {
+        margin-top: 0;
+      }
+      .para {
+        padding: 15px 0 0 150px;
+        @media screen and (max-width: 992px) {
+          padding-left: 0;
+          padding-bottom: 40px;
+        }
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+          padding-left: 100px;
+        }
+      }
+    }
+    .contact_form {
+      .form_group {
+        margin-bottom: 22px;
+        input {
+          height: 50px;
+          width: 100%;
+          padding: 0 10px;
+          color: #393634;
+          font-size: 18px;
+        }
+        textarea {
+          width: 100%;
+          padding: 10px;
+          color: #393634;
+          font-size: 18px;
+          font-family: var(--font_secondary);
+        }
+
+        .errors_msg {
+          font-size: 15px;
+          color: red;
+        }
+
+        ::placeholder {
+          color: #393634;
+          opacity: 1; /* Firefox */
+          font-size: 18px;
+        }
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #393634;
+          font-size: 18px;
+        }
+
+        ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #393634;
+          font-size: 18px;
+        }
+      }
+
+      .submit_button {
+        margin-top: 50px;
+        .button {
+          display: inline-block;
+          position: relative;
+          .right_arrow {
+            position: absolute;
+            top: 50%;
+            right: 35px;
+            // z-index: 1;
+            transform: translateY(-50%);
+          }
+          input {
+            border: 0;
+            height: 50px;
+            width: 176px;
+            text-align: left;
+            font-size: 20px;
+            color: #fff;
+            padding-left: 35px;
+            background-color: #46301b;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

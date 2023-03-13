@@ -1,0 +1,262 @@
+.text_xxs {
+  font-size: 16px;
+}
+.text_xs {
+  font-size: 18px;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+.text_sm {
+  font-size: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+//for default body copy font
+.text_reg {
+  font-size: 22px;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.text_md {
+  font-size: 24px;
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+  }
+}
+.text_lg {
+  font-size: 30px;
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+  }
+}
+.text_xl {
+  font-size: 40px;
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+  }
+}
+.text_xxl {
+  font-size: 50px;
+  @media screen and (max-width: 767px) {
+    font-size: 35px;
+  }
+}
+.text_xxxl {
+  font-size: 60px;
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+  }
+}
+// .text_xxxxl {}
+
+// //each loop for creating font weights ->
+// //.text_100, .text_200 .....
+$sizes: 400, 500, 600; //reg,med,semibold,bold,extrabold,black
+
+@each $size in $sizes {
+  .text_#{$size} {
+    font-weight: $size;
+  }
+}
+.slace {
+  padding-left: 5px;
+}
+
+.ptb {
+  padding: 80px 0;
+  @media screen and (max-width: 767px) {
+    padding: 50px 0;
+  }
+}
+
+.xs-visible {
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.pb {
+  padding-bottom: 80px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+}
+.pt {
+  padding-top: 80px;
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+  }
+}
+
+main {
+  padding-top: var(--headerHeight);
+}
+
+.padd_t {
+  @media screen and (max-width: 992px) {
+    padding-top: 59px;
+  }
+}
+
+.button_left {
+  text-align: left;
+}
+
+.button_center {
+  text-align: center;
+}
+.button_right {
+  text-align: right;
+}
+
+.slick-prev {
+  left: 10px;
+  bottom: -60px;
+  transform: rotate(-180deg);
+  top: inherit !important;
+}
+.slick-next {
+  left: 60px;
+  bottom: -26px;
+  transform: inherit;
+  top: inherit !important;
+}
+
+.breadcrumbs {
+  padding: 40px 0 20px;
+  @media screen and (max-width: 992px) {
+    padding: 20px 0 20px;
+  }
+}
+
+.headtitle_btn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 65px;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  &.headtitle_b_p {
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+
+  .button_center {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .heading_title {
+    padding-left: 150px;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      padding-left: 50px;
+    }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+      padding-left: 100px;
+    }
+
+    &::after {
+      content: "";
+      left: 0;
+      top: 50%;
+      height: 2px;
+      width: 120px;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: #a37f52;
+      @media screen and (max-width: 767px) {
+        width: 40px;
+      }
+      @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        width: 80px;
+      }
+    }
+  }
+}
+
+// juicer css start here
+.social_item {
+  margin: 0 15px;
+  padding: 20px;
+  width: 32vw !important;
+  border: 1px solid #dfdce1;
+  @media screen and (max-width: 1199px) {
+    width: 43vw !important;
+  }
+  @media screen and (max-width: 991px) {
+    width: 40vw !important;
+  }
+  @media screen and (max-width: 767px) {
+    width: 80vw !important;
+  }
+}
+
+.juicer-feed .j-stacker > * {
+  display: block !important;
+  width: 100% !important;
+}
+.j-image {
+  display: none;
+}
+.juicer-feed .j-paginate {
+  display: none;
+}
+
+.juicer-feed .j-meta {
+  display: none;
+}
+.juicer-feed.modern li.feed-item {
+  border-width: 0;
+}
+.juicer-feed.modern .j-text {
+  font-size: 14px;
+  padding: 20px 0px 0px 0px;
+}
+
+.juicer-feed.modern .j-message p {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: var(--font_secondary);
+  color: var(--color_ex3);
+}
+.juicer-feed.modern .j-message p .auto {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: var(--font_secondary);
+  color: var(--color_ex3);
+  font-weight: normal !important;
+}
+
+.juicer-feed.modern .j-message p .j-read-more {
+  display: none;
+}
+.j-poster h3 {
+  font-size: 16px !important;
+  font-family: var(--font_secondary);
+  color: var(--color_ex3);
+  font-weight: normal !important;
+}
+.juicer-feed.modern .j-poster img {
+  display: none;
+}
+.juicer-feed.modern .j-poster {
+  padding: 14px 0px 12px;
+}
+.juicer-feed.modern .j-poster .j-date {
+  display: none;
+}
+
+// juicer css end here

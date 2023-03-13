@@ -1,0 +1,37 @@
+@import "../../helpers/helpers.scss";
+
+.juicer_tweets {
+  overflow: hidden;
+  margin-bottom: 40px;
+  .button_center {
+    @media screen and (max-width: 767px) {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .juicer_slider {
+    margin-left: var(--container_left_space);
+  }
+  .itemname_share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .item_name {
+      span {
+        padding: 0 6px;
+        font-style: italic;
+      }
+      sub {
+        padding-right: 6px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .para {
+    line-height: 25px;
+    @media screen and (max-width: 991px) {
+      word-break: break-all;
+    }
+  }
+}

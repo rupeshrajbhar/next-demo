@@ -1,0 +1,30 @@
+@import "../../helpers/helpers.scss";
+
+.guest_speaker {
+  .qude {
+    margin: auto;
+  }
+  .heading_title {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .para {
+    width: 66%;
+    margin: auto;
+    padding: 40px 0 30px;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      line-height: 32px;
+      padding: 30px 0 20px 0;
+    }
+  }
+
+  .button_center {
+    margin-top: 40px;
+    @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+  }
+}

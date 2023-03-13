@@ -1,0 +1,28 @@
+@import "../helpers/helpers.scss";
+.media_page {
+  .mediaSec {
+    .mediaGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      padding:10px 0 40px;
+      @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .mediaitem {
+        .imgSec {
+          position: relative;
+          margin-bottom: 10px;
+          .imgPlay {
+            position: absolute;
+            left: 15px;
+            bottom: 30px;
+          }
+        }
+        .para_txt {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

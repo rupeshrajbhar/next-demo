@@ -1,0 +1,32 @@
+@import "../helpers/helpers.scss";
+
+.thank_you {
+  .thank_you_main {
+    height: 100vh;
+    position: relative;
+    .thank_you_content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px 15px;
+      .thank_you_logo {
+        filter: invert(1);
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+      .back_btn {
+        padding: 40px 0px;
+        .btn_txt {
+          display: inline-block;
+          padding: 8px 25px;
+          cursor: pointer;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+}

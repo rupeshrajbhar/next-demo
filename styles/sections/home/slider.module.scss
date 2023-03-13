@@ -1,0 +1,48 @@
+@import "../../helpers/helpers.scss";
+
+.slider_item {
+  margin: 0 15px;
+  padding: 20px;
+  min-height: 257px;
+  width: 32vw;
+  border: 1px solid #dfdce1;
+  @media screen and (max-width: 1199px) {
+    min-height: 282px;
+    width: 440px !important;
+  }
+  @media screen and (max-width: 767px) {
+    min-height: auto;
+    width: 80vw !important;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    width: 40vw !important;
+   }
+
+  //   @media screen and (max-width: 767px) {
+  //     min-height: 370px;
+  //     width: 100% !important;
+  //   }
+  .itemname_share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .item_name {
+      span {
+        padding: 0 6px;
+        font-style: italic;
+      }
+      sub {
+        padding-right: 6px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .para {
+    line-height: 25px;
+    @media screen and (max-width: 991px) {
+      word-break: break-all;
+    }
+  }
+}

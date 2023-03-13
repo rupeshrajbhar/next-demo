@@ -1,0 +1,62 @@
+@import "../../helpers/helpers.scss";
+
+.latest_tweets {
+  overflow: hidden;
+  margin-bottom: 40px;
+  .button_center {
+    @media screen and (max-width: 767px) {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .tweets_slider {
+    margin-left: var(--container_left_space);
+
+    :global(.slick-prev) {
+      left: 0;
+    }
+    :global(.slick-next) {
+      left: 50px;
+    }
+    .tweet_wrapper {
+      //   padding: 0 30px;
+      padding-right: 30px;
+      width: 350px;
+      max-width: 350px;
+      @include sm-down {
+        padding-right: 0px;
+        padding-left: 10px;
+      }
+
+      .img {
+      }
+      .date {
+        margin-top: 20px;
+        @extend %d_flex;
+        align-items: center;
+      }
+      .desc {
+        @include trimLines(2);
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .btn {
+        margin-top: 10px;
+
+        a {
+          position: relative;
+
+          &:before {
+            content: " ";
+            height: 1px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background-color: var(--color_ex3);
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

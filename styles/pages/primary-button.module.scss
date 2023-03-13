@@ -1,0 +1,11 @@
+@import "../helpers/helpers.scss";
+
+.primary_button{
+    display: inline-block;
+    padding: 8px 25px;
+    cursor: pointer;
+    .right_arrow{
+        display: inline-block;
+        padding-left: 15px;
+    }
+}

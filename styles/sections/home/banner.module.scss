@@ -1,0 +1,37 @@
+@import "../../helpers/helpers.scss";
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - var(--headerHeight));
+  @media screen and (max-width: 767px) {
+    height: calc(50vh - var(--headerHeight));
+}
+
+img{
+  height: 100%;
+  object-fit: cover;
+}
+ 
+  .fullwidthimg{
+    width: 100%;
+  }
+
+  .banner_title_main {
+    position: absolute;
+    left: var(--container_left_space);
+    bottom: 25%;
+    width: 100%;
+
+    .banner_title_head {
+      color: var(--color_white);
+      @media screen and (max-width: 767px) {
+        padding: 0 15px;
+        font-size: 30px;
+    }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        padding:0 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../helpers/helpers.scss";
+
+.banner_description {
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+  @media screen and (max-width: 991px) {
+    margin-top: 0px;
+  }
+  .description {
+    width: 60%;
+    margin: 0 0 0 auto;
+    padding: 60px 100px 70px;
+    border-top-left-radius: 20px;
+
+    @media screen and (max-width: 1199px) {
+      width: 84%;
+    }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      padding: 33px 15px 50px;
+      border-top-left-radius: 0px;
+    }
+    .heading_title {
+      line-height: 60px;
+      @media screen and (max-width: 767px) {
+       line-height: 40px;
+      }
+
+      .heading_span {
+        display: inherit;
+      }
+    }
+
+    h6 {
+      width: 95%;
+      padding-top: 25px;
+      line-height: 34px;
+      @media screen and (max-width: 767px) {
+       line-height: 32px;
+      }
+    }
+
+    .button_left{
+      margin-top: 40px;
+      @media screen and (max-width: 767px) {
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+  }
+}

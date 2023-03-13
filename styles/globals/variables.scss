@@ -1,0 +1,40 @@
+$browser-prefixes: false !default;
+// $placeholder-color-default: #ff6666;
+
+:root {
+  //fonts
+  --font_primary: "Playfair Display", sans-serif;
+  --font_secondary: "Rubik", sans-serif;
+
+  //colors
+  --color_primary: #273d3f;
+  --color_secondary: #46301b;
+  --color_tertiary: #ede5d6;
+  --color_ex1: #a37f52;
+  --color_ex2: #a78b7d;
+  --color_ex3: #393634;
+  --color_white: #fff;
+
+  //extras
+  --container_width: 100%;
+  --transition: ease all 300ms;
+  --headerHeight:0px;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    --container_width: 750px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    --container_width: 970px;
+  }
+
+  @media (min-width: 1200px) {
+    --container_width: 1170px;
+  }
+
+  // @media (min-width: 1680px) {
+  //   --container_width: 1360px;
+  // }
+
+  --container_left_space: calc((100% - var(--container_width)) / 2);
+}

@@ -1,0 +1,15 @@
+$colors: "primary" "white", "secondary" "primary", "tertiary" "primary",
+  "white" "", "ex3" "color_ex3", "primary" "";
+
+@each $color, $color_text in $colors {
+  //classes for bg colors
+  .bg_#{$color} {
+    background-color: var(--color_#{$color});
+    color: var(--color_#{$color_text});
+  }
+
+  //classes for text colors
+  .color_#{$color} {
+    color: var(--color_#{$color});
+  }
+}

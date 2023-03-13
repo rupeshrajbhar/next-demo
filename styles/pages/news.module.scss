@@ -1,0 +1,46 @@
+@import "../helpers/helpers.scss";
+
+.news_page{
+    .news_section{
+        .news_item{
+            width: 90%;
+            margin:0 auto 60px;
+            display: flex;
+            padding-bottom: 60px;
+            justify-content: space-between;
+            border-bottom: 1px solid #DACCB9;
+            @media screen and (max-width: 767px) {
+              width: 100%;
+              flex-wrap: wrap;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            .news_info{
+                width: 75%;
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 40px;
+                  }
+                .para{
+                    margin:10px 50px 40px 0;
+                    @media screen and (max-width: 767px) {
+                      margin-right: 0;
+                      }
+                }
+            }
+            .news_img{
+                width: 25%;
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                  }
+                img{
+                    margin-left: auto;
+                    @media screen and (max-width: 767px) {
+                        margin: 0 auto 0 0;
+                      }
+                }
+            }
+        }
+    }
+}

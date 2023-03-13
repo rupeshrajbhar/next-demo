@@ -1,0 +1,58 @@
+@import "../../helpers/helpers.scss";
+
+.news_item {
+  padding: 25px 15px;
+  border-top: 1px solid #c6c3c7;
+  border-left: 1px solid #c6c3c7;
+  border-right: 1px solid #c6c3c7;
+  &:last-child {
+    border-bottom: 1px solid #c6c3c7;
+  }
+  .info_img {
+    .info_img_wrapper {
+      display: flex;
+      .info {
+        width: 70%;
+        padding-right: 10px;
+        .para {
+          line-height: 25px;
+        }
+      }
+      .img {
+        width: 30%;
+        position: relative;
+
+        .paly_btn {
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          .paly_button {
+            width: 35px;
+            height: 35px;
+          }
+        }
+        img {
+          height: 75px;
+          object-fit: cover;
+        }
+      }
+      .para {
+        @include trimLines(2);
+      }
+    }
+    .audio_arrow {
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+      justify-content: space-between;
+      .audio {
+        display: flex;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

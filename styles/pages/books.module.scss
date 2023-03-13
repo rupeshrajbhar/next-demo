@@ -1,0 +1,56 @@
+@import "../helpers/helpers.scss";
+
+.books_page{
+    .publications_section {
+
+        .heading_title {
+            padding-left: 150px;
+            position: relative;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            @media screen and (max-width: 767px) {
+                padding-left: 50px;
+                margin-bottom: 20px;
+                padding-top: 0;
+            }
+            @media only screen and (min-width: 993px) and (max-width: 1200px) {
+             padding-left: 100px;
+            } 
+
+            &::after {
+                content: '';
+                left: 0;
+                top: 50%;
+                height: 2px;
+                width: 120px;
+                position: absolute;
+                transform: translateY(-50%);
+                background-color: #A37F52;
+                @media screen and (max-width: 767px) {
+                    width: 40px;
+                }
+                @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                  width: 80px;
+                 }
+            }
+        }
+
+        .card_section {
+            display: grid;
+            grid-row-gap: 30px;
+            grid-column-gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            @media screen and (max-width: 767px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+               }
+               @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                grid-template-columns: repeat(3, 1fr);
+               }
+        }
+    }
+}
